@@ -10,3 +10,9 @@ spring:
 feign:
   hystrix:
     enabled: true
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: jongwong
+    password: wz960522
