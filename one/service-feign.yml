@@ -16,3 +16,13 @@ spring:
     port: 5672
     username: jongwong
     password: wz960522
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
