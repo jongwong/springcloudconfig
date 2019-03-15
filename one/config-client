@@ -1,0 +1,28 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8766
+spring:
+  application:
+    name: config-client
+feign:
+  hystrix:
+    enabled: true
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: jongwong
+    password: wz960522
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
