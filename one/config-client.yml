@@ -27,5 +27,3 @@ management:
       exposure:
         include: bus-refresh
 
-
-mytestname: jongwongtest
